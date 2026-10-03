@@ -1,0 +1,486 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deekshitha | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #020617;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 8%;
+        }
+
+        .home-content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .home-content h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .home-content h1 span {
+            color: #38bdf8;
+        }
+
+        .home-content h3 {
+            color: #94a3b8;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .home-content p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #020617;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            color: #38bdf8;
+            margin-bottom: 40px;
+        }
+
+        /* About */
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .skill h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            color: #cbd5e1;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
+
+        /* Education */
+        .education {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .education-box {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 5px solid #38bdf8;
+        }
+
+        .education-box h3 {
+            color: #38bdf8;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            color: #94a3b8;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .home-content h1 {
+                font-size: 40px;
+            }
+
+            .skills-container,
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Deekshitha</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section id="home">
+
+        <div class="home-content">
+
+            <h1>Hi, I'm <span>Deekshitha</span></h1>
+
+            <h3>BCA Data Science Student</h3>
+
+            <p>
+                I am passionate about Data Science, Python,
+                Artificial Intelligence and Machine Learning.
+                I enjoy learning new technologies and building
+                useful projects.
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="title">About Me</h2>
+
+        <div class="about">
+
+            <p>
+                I am a BCA Data Science student interested in
+                programming, data analysis, artificial intelligence
+                and machine learning.
+            </p>
+
+            <br>
+
+            <p>
+                I am continuously improving my technical skills
+                by learning programming concepts, databases,
+                statistics and AI technologies.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="title">My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Programming, functions, loops, OOP and data handling.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Data Science</h3>
+                <p>Data analysis, preprocessing and extracting insights.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <p>Understanding prediction, classification and clustering.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Artificial Intelligence</h3>
+                <p>AI concepts, intelligent systems and AI applications.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Statistics</h3>
+                <p>Probability, distributions and statistical analysis.</p>
+            </div>
+
+            <div class="skill">
+                <h3>DBMS</h3>
+                <p>Database concepts, SQL and database architecture.</p>
+            </div>
+
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <p>Creating responsive and attractive websites.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Data Visualization</h3>
+                <p>Representing data using meaningful charts and graphs.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Problem Solving</h3>
+                <p>Developing logical and programming solutions.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website created using
+                    HTML and CSS to showcase my skills,
+                    education and projects.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Student Data Analysis</h3>
+
+                <p>
+                    A data science project focused on analyzing
+                    student information and finding useful
+                    patterns from the data.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Machine Learning Project</h3>
+
+                <p>
+                    A beginner-level machine learning project
+                    involving data preprocessing and prediction.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>AI Project</h3>
+
+                <p>
+                    An artificial intelligence project designed
+                    to demonstrate how AI can solve real-world
+                    problems.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2 class="title">Education</h2>
+
+        <div class="education">
+
+            <div class="education-box">
+
+                <h3>BCA - Data Science</h3>
+
+                <p>
+                    Currently pursuing Bachelor of Computer
+                    Applications with specialization in
+                    Data Science.
+                </p>
+
+            </div>
+
+            <div class="education-box">
+
+                <h3>Technical Learning</h3>
+
+                <p>
+                    Python | Data Science | AI | Machine Learning |
+                    Statistics | DBMS | HTML | CSS
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="title">Contact Me</h2>
+
+        <div class="contact">
+
+            <p>📧 Email: your-email@example.com</p>
+
+            <p>📱 Phone: +91 XXXXX XXXXX</p>
+
+            <p>📍 India</p>
+
+            <a href="mailto:your-email@example.com" class="btn">
+                Send Me an Email
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Deekshitha | BCA Data Science Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
